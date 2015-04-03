@@ -1,0 +1,20 @@
+$TTL 86400
+@   IN  SOA     rac01.mydomain.com. root.mydomain.com. (
+        2015033001  ;Serial
+        3600        ;Refresh
+        1800        ;Retry
+        604800      ;Expire
+        86400       ;Minimum TTL
+)
+; Specify our two nameservers
+		IN	NS		rac01.example.com.
+		IN	NS		rac02.example.com.
+; Resolve nameserver hostnames to IP
+101		IN	PTR		rac01.example.com.
+102		IN	PTR		rac02.example.com.
+
+; Define IP -> hostname pairs which you wish to resolve		
+150		IN	PTR		www.example.com.
+110		IN	PTR		clust01-scan.example.com.
+111		IN	PTR		clust01-scan.example.com.
+112		IN	PTR		clust01-scan.example.com.
