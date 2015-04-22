@@ -5,6 +5,7 @@ The blogpost with these files can be found at: http://blog.grid-it.nl/index.php/
 
 Make sure you have VirtualBox, Vagrant and Git installed and you’re good to go.
 On the commandline just use the three following command to get your DNS setup running:
+
 git clone https://github.com/rdbraber/dns_blogpost.git 
 
 cd dns_blogpost
